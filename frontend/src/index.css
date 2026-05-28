@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  :root {
+        --background: 40 33% 95%; /* #f7f4ef */
+        --foreground: 0 0% 10%; /* #1a1a1a */
+        
+        --card: 40 33% 98%; /* #fcfbfa */
+        --card-foreground: 0 0% 10%;
+        
+        --popover: 40 33% 98%;
+        --popover-foreground: 0 0% 10%;
+        
+        --primary: 20 2% 18%; /* #2d2c2b - Deep charcoal */
+        --primary-foreground: 40 33% 95%; /* Warm beige */
+        
+        --secondary: 15 28% 86%; /* #e6d6d1 - Blush rose */
+        --secondary-foreground: 20 2% 18%;
+        
+        --muted: 40 10% 90%;
+        --muted-foreground: 0 0% 40%;
+        
+        --accent: 18 20% 67%; /* #bfa59a - Earthy tone */
+        --accent-foreground: 40 33% 98%;
+        
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        
+        --border: 40 15% 85%;
+        --input: 40 15% 85%;
+        --ring: 20 2% 18%;
+        
+        --radius: 1rem; /* Softer edges */
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
