@@ -1,7 +1,13 @@
 import React from 'react';
 import { MapPin, Clock, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import { Button } from '../ui/button';
 
 export default function Footer() {
+  const handleContactClick = () => {
+    const text = encodeURIComponent("Hi! I would like to know more about COREVA Pilates & Wellness Studio.");
+    window.open(`https://wa.me/919129661662?text=${text}`, '_blank');
+  };
+
   return (
     <footer className="w-full bg-primary text-primary-foreground pt-24 pb-12 px-6 lg:px-12 rounded-t-[3rem] relative mt-12">
       <div className="max-w-7xl mx-auto">
@@ -49,20 +55,30 @@ export default function Footer() {
               <Phone className="w-5 h-5 opacity-70" /> Contact
             </h3>
             <div className="space-y-6 font-light text-primary-foreground/80">
-              <a href="tel:+919129661662" className="flex items-center gap-4 hover:text-white transition-colors group">
-                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <span className="text-lg">+91 9129661662</span>
-              </a>
-              <a href="mailto:corevapilatestudio@gmail.com" className="flex items-center gap-4 hover:text-white transition-colors group">
-                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <span className="text-lg break-all">corevapilatestudio@gmail.com</span>
-              </a>
+              <Button 
+                onClick={handleContactClick} 
+                variant="outline"
+                className="w-full bg-white/10 hover:bg-white border-white/20 hover:text-primary transition-all duration-300 py-6 text-base"
+              >
+                Chat on WhatsApp
+              </Button>
+
+              <div className="space-y-4 pt-2">
+                <a onClick={handleContactClick} className="flex items-center gap-4 hover:text-white transition-colors group cursor-pointer">
+                  <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <span className="text-lg">+91 9129661662</span>
+                </a>
+                <a href="mailto:corevapilatestudio@gmail.com" className="flex items-center gap-4 hover:text-white transition-colors group">
+                  <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <span className="text-lg break-all">corevapilatestudio@gmail.com</span>
+                </a>
+              </div>
               
-              <div className="pt-8 flex gap-4">
+              <div className="pt-6 flex gap-4">
                 <a href="#" className="w-12 h-12 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
                   <Instagram className="w-5 h-5" />
                 </a>

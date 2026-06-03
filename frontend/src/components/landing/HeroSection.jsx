@@ -2,6 +2,15 @@ import React from 'react';
 import { Button } from '../ui/button';
 
 export default function HeroSection() {
+  const handleBookTrial = () => {
+    const message = encodeURIComponent("Hi! I would like to book a trial session at COREVA.");
+    window.open(`https://wa.me/919129661662?text=${message}`, '_blank');
+  };
+
+  const handleExplore = () => {
+    document.getElementById('memberships').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -32,10 +41,19 @@ export default function HeroSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6">
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-sm md:text-base px-10 py-6 rounded-full transition-transform hover:scale-105 duration-300">
+          <Button 
+            size="lg" 
+            onClick={handleBookTrial}
+            className="bg-white text-primary hover:bg-white/90 text-sm md:text-base px-10 py-6 rounded-full transition-transform hover:scale-105 duration-300"
+          >
             Book Your Trial Session
           </Button>
-          <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white text-sm md:text-base px-10 py-6 rounded-full transition-transform hover:scale-105 duration-300 backdrop-blur-sm">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            onClick={handleExplore}
+            className="bg-transparent text-white border-white hover:bg-white/10 hover:text-white text-sm md:text-base px-10 py-6 rounded-full transition-transform hover:scale-105 duration-300 backdrop-blur-sm"
+          >
             Explore Classes
           </Button>
         </div>

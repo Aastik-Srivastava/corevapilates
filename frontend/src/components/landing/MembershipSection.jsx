@@ -13,8 +13,18 @@ export default function MembershipSection() {
     { name: "42 Sessions", price: "₹19,999", original: "₹21,999", valid: "Valid 3 Months", popular: false },
   ];
 
+  const handleSelectPlan = (plan) => {
+    const text = encodeURIComponent(`Hi! I am interested in the ${plan.name} at COREVA for ${plan.price}. Could you share more details?`);
+    window.open(`https://wa.me/919129661662?text=${text}`, '_blank');
+  };
+
+  const handleBookTrial = () => {
+    const text = encodeURIComponent("Hi! I would like to book a trial session at COREVA.");
+    window.open(`https://wa.me/919129661662?text=${text}`, '_blank');
+  };
+
   return (
-    <section className="w-full py-24 md:py-32 px-6 bg-background relative overflow-hidden">
+    <section id="memberships" className="w-full py-24 md:py-32 px-6 bg-background relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-secondary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-accent/10 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/2" />
@@ -60,6 +70,7 @@ export default function MembershipSection() {
                     {plan.price}
                   </div>
                   <Button 
+                    onClick={() => handleSelectPlan(plan)}
                     className={`w-full rounded-full py-6 transition-all duration-300 ${
                       plan.popular 
                         ? 'bg-white text-primary hover:bg-white/90' 
@@ -75,7 +86,11 @@ export default function MembershipSection() {
         </div>
 
         <div className="mt-20 text-center">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-8 text-lg font-medium shadow-xl hover:shadow-2xl transition-all duration-300">
+          <Button 
+            size="lg" 
+            onClick={handleBookTrial}
+            className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-8 text-lg font-medium shadow-xl hover:shadow-2xl transition-all duration-300"
+          >
             Book a Trial Session
           </Button>
         </div>
