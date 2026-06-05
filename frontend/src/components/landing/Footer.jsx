@@ -25,10 +25,21 @@ export default function Footer() {
                 Gomti Nagar Extension,<br/>
                 Lucknow
               </p>
-              <div className="pt-4 border-t border-primary-foreground/10">
+              <div className="pt-4 border-t border-primary-foreground/10 mb-4">
                 <p className="text-sm opacity-80 uppercase tracking-wider mb-2">Landmarks:</p>
                 <p>Near CMS School,<br/>DPS School, and Saryu Apartment</p>
               </div>
+              
+              {/* Dynamic Map Link Button */}
+              <a 
+                href="https://maps.app.goo.gl/cyEW3L1qXmVXpG2DA" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 mt-4 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors group cursor-pointer border border-white/10 w-fit"
+              >
+                <MapPin className="w-4 h-4 text-accent" />
+                <span className="text-sm font-medium">View on Google Maps</span>
+              </a>
             </div>
           </div>
 
@@ -79,10 +90,20 @@ export default function Footer() {
               </div>
               
               <div className="pt-6 flex gap-4">
-                <a href="#" className="w-12 h-12 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
+                <a 
+                  href="https://www.instagram.com/coreva.pilatestudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-12 h-12 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61590345551155&mibextid=wwXIfr" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300"
+                >
                   <Facebook className="w-5 h-5" />
                 </a>
               </div>

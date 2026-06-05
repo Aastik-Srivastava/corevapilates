@@ -7,25 +7,15 @@ export default function FounderSection() {
       <div className="absolute -left-20 top-0 w-64 h-64 bg-secondary/30 rounded-full blur-[80px]" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
-        {/* Placeholder Image Container */}
+        {/* Founder Image */}
         <div className="w-full lg:w-1/2 relative group">
           <div className="absolute -inset-4 bg-accent/20 rounded-3xl -z-10 transform rotate-2 transition-transform group-hover:rotate-3 duration-500" />
-          <div className="aspect-[3/4] max-h-[600px] w-full relative rounded-3xl overflow-hidden shadow-2xl bg-muted flex items-center justify-center">
-            {/* 
-              This is a stock image acting as a high-quality placeholder.
-              Can easily be swapped out with actual founder's image. 
-            */}
+          <div className="aspect-[3/4] max-h-[600px] w-full relative rounded-3xl overflow-hidden shadow-2xl bg-muted">
             <img 
-              src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-              alt="Astitava Srivastava - Founder Placeholder" 
-              className="w-full h-full object-cover opacity-90"
+              src="https://customer-assets.emergentagent.com/job_premium-pilates/artifacts/xbk9x67s_Gemini_Generated_Image_dkeh7mdkeh7mdkeh.png" 
+              alt="Astitava Srivastava - Founder of COREVA" 
+              className="w-full h-full object-cover"
             />
-            
-            <div className="absolute inset-0 bg-black/10 flex flex-col items-center justify-center p-6 text-center">
-              <span className="bg-white/80 backdrop-blur-md text-primary px-4 py-2 rounded-full text-xs uppercase tracking-widest font-semibold">
-                Founder Image Placeholder
-              </span>
-            </div>
           </div>
         </div>
 
