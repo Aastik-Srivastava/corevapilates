@@ -12,7 +12,7 @@ export default function MembershipSection() {
     {
       category: "Pilates",
       plans: [
-        { name: "Single Session", price: "₹899", original: null, valid: "1 Session", description: "Perfect for occasional training or trying out a Pilates session.", popular: false },
+        { name: "Single Session", price: "₹799", original: null, valid: "1 Session", description: "Perfect for occasional training or trying out a Pilates session.", popular: false },
         { name: "Monthly Membership", price: "₹7,499", original: "₹10,788", valid: "12 Sessions • Valid 30 Days", description: "3 sessions per week. Ideal for consistent progress and fitness improvement.", popular: true },
         { name: "Performance Membership", price: "₹13,999", original: "₹21,576", valid: "24 Sessions • Valid 60 Days", description: "Designed for accelerated strength, mobility, endurance, and body transformation.", popular: false },
         { name: "Transformation Membership", price: "₹19,999", original: "₹37,758", valid: "42 Sessions • Valid 90 Days", description: "Our best-value package for long-term fitness, posture correction, and transformation results.", popular: false },
@@ -27,7 +27,7 @@ export default function MembershipSection() {
     {
       category: "Aerial Yoga",
       plans: [
-        { name: "Single Session", price: "₹999", original: null, valid: "1 Session", description: "Experience the freedom and balance of Aerial Yoga.", popular: false },
+        { name: "Single Session", price: "₹899", original: null, valid: "1 Session", description: "Experience the freedom and balance of Aerial Yoga.", popular: false },
         { name: "Monthly Package", price: "₹6,999", original: "₹9,999", valid: "8 Sessions • Valid 30 Days", description: "Build flexibility, confidence, balance, and core strength through aerial practice.", popular: false },
       ]
     },
