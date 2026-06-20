@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from '../ui/card';
-import { Activity, Wind, Heart, Zap, Waves, Dumbbell, Stethoscope, Leaf, Utensils, UserCheck } from 'lucide-react';
+import { Activity, Wind, Heart, Zap, Waves, Dumbbell, Stethoscope, Leaf, Utensils } from 'lucide-react';
 
 export default function CorePillarsSection() {
   const pillars = [
@@ -48,11 +48,6 @@ export default function CorePillarsSection() {
       title: "Diet Consultation",
       description: "Customized meal planning based on fitness goals and dietary preferences.",
       icon: <Utensils className="w-8 h-8 stroke-1 text-primary" />
-    },
-    {
-      title: "Personalised Wellness",
-      description: "One-on-one guided sessions combining movement, mobility, and coaching.",
-      icon: <UserCheck className="w-8 h-8 stroke-1 text-primary" />
     }
   ];
 
@@ -64,7 +59,7 @@ export default function CorePillarsSection() {
           <div className="w-16 h-[1px] bg-primary/20 mx-auto" />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <Card key={index} className="group bg-background border-none shadow-sm hover:shadow-md transition-all duration-500 overflow-hidden rounded-3xl">
               <CardContent className="p-8 flex flex-col h-full items-start relative">
