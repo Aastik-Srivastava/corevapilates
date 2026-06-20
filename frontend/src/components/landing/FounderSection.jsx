@@ -12,7 +12,7 @@ export default function FounderSection() {
           <div className="absolute -inset-4 bg-accent/20 rounded-3xl -z-10 transform rotate-2 transition-transform group-hover:rotate-3 duration-500" />
           <div className="aspect-[3/4] max-h-[600px] w-full relative rounded-3xl overflow-hidden shadow-2xl bg-muted">
             <img 
-              src="https://customer-assets.emergentagent.com/job_premium-pilates/artifacts/xbk9x67s_Gemini_Generated_Image_dkeh7mdkeh7mdkeh.png" 
+              src="/images/founder.png" 
               alt="Astitava Srivastava - Founder of COREVA" 
               className="w-full h-full object-cover"
             />
