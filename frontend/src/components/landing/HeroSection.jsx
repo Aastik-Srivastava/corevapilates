@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 
 export default function HeroSection() {
   const handleBookTrial = () => {
-    const message = encodeURIComponent("Hi! I would like to book a trial session at COREVA.");
+    const message = encodeURIComponent("Hi! I would like to book a session at COREVA.");
     window.open(`https://wa.me/919129661662?text=${message}`, '_blank');
   };
 
@@ -46,7 +46,7 @@ export default function HeroSection() {
             onClick={handleBookTrial}
             className="bg-white text-primary hover:bg-white/90 text-sm md:text-base px-10 py-6 rounded-full transition-transform hover:scale-105 duration-300"
           >
-            Book Your Trial Session
+            Book a Session
           </Button>
           <Button 
             size="lg" 

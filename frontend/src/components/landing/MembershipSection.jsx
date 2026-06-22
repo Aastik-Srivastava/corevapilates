@@ -234,7 +234,7 @@ const CategoryAccordion = ({ section }) => {
 
 export default function MembershipSection() {
   const handleBookTrial = () => {
-    const text = encodeURIComponent("Hi! I would like to book a trial session at COREVA.");
+    const text = encodeURIComponent("Hi! I would like to book a session at COREVA.");
     window.open(`https://wa.me/919129661662?text=${text}`, '_blank');
   };
 
@@ -302,7 +302,7 @@ export default function MembershipSection() {
             onClick={handleBookTrial}
             className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-8 text-lg font-medium shadow-xl hover:shadow-2xl transition-all duration-300"
           >
-            Book a Trial Session
+            Book a Session
           </Button>
         </div>
       </div>
