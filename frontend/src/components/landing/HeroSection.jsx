@@ -17,7 +17,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1747239685045-fcbcf98985db?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxyZWZvcm1lciUyMHBpbGF0ZXN8ZW58MHx8fHwxNzc5OTkyMDc3fDA&ixlib=rb-4.1.0&q=85")'
+          backgroundImage: 'url("/images/hero-bg.jpg")'
         }}
       />
       {/* Elegant Overlay */}
