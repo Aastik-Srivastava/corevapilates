@@ -29,9 +29,6 @@ export default function GallerySection() {
               }`}
             >
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-500 z-10 flex items-center justify-center">
-                <span className="bg-white/90 text-primary px-3 py-1 rounded text-[10px] uppercase tracking-wider font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Placeholder
-                </span>
               </div>
               <img 
                 src={src} 
