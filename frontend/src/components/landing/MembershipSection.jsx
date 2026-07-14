@@ -262,39 +262,7 @@ export default function MembershipSection() {
           ))}
         </div>
         
-        {/* Policies Section */}
-        <div className="bg-white/60 backdrop-blur-xl border border-primary/10 rounded-3xl p-8 md:p-12 shadow-sm">
-          <h3 className="text-2xl font-serif text-primary mb-8 flex items-center gap-3">
-            <Info className="w-6 h-6 text-accent" />
-            Studio Policies
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Validity Extension</p>
-              <p className="font-medium text-primary">₹999 / Extra Month</p>
-            </div>
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Unused Sessions</p>
-              <p className="font-medium text-primary">Carry Forward on Renewal</p>
-            </div>
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Rescheduling</p>
-              <p className="font-medium text-primary">12-Hour Notice Required</p>
-            </div>
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">No Show</p>
-              <p className="font-medium text-primary">Session Deducted</p>
-            </div>
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Membership</p>
-              <p className="font-medium text-primary">Non-Refundable & Non-Transferable</p>
-            </div>
-            <div className="bg-background p-4 rounded-2xl">
-              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Advance Booking</p>
-              <p className="font-medium text-primary">Required</p>
-            </div>
-          </div>
-        </div>
+        
 
         <div className="mt-16 text-center">
           <Button 
