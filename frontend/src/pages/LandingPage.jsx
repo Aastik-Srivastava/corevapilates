@@ -4,7 +4,6 @@ import AboutSection from '../components/landing/AboutSection';
 import CorePillarsSection from '../components/landing/CorePillarsSection';
 import MemberBenefitsSection from '../components/landing/MemberBenefitsSection';
 import MembershipSection from '../components/landing/MembershipSection';
-import PrivateTrainingSection from '../components/landing/PrivateTrainingSection';
 import TrainerSection from '../components/landing/TrainerSection';
 import FounderSection from '../components/landing/FounderSection';
 // import TestimonialSection from '../components/landing/TestimonialSection'; // Commented out to serve as a placeholder for later
@@ -19,7 +18,6 @@ export default function LandingPage() {
       <CorePillarsSection />
       <MemberBenefitsSection />
       <MembershipSection />
-      <PrivateTrainingSection />
       <TrainerSection />
       <FounderSection />
       {/* 
