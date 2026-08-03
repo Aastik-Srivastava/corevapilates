@@ -163,7 +163,6 @@ const CategoryAccordion = ({ section }) => {
                   <div className="mt-auto pt-4">
                     {section.hasGroupAndPrivate ? (
                       <div className="flex flex-col gap-4">
-                        {/* Prices temporarily hidden */}
                         <div className="flex gap-2">
                           <Button 
                             onClick={() => handleSelectPlan(plan, 'Group')}
@@ -190,7 +189,6 @@ const CategoryAccordion = ({ section }) => {
                       </div>
                     ) : (
                       <>
-                        {/* Prices temporarily hidden */}
                         <Button 
                           onClick={() => handleSelectPlan(plan)}
                           disabled={plan.price === "Coming Soon"}
@@ -247,7 +245,6 @@ export default function MembershipSection() {
           ))}
         </div>
         
-<<<<<<< HEAD
         {/* Policies Section */}
         <div className="bg-white/60 backdrop-blur-xl border border-primary/10 rounded-3xl p-8 md:p-12 shadow-sm">
           <h3 className="text-2xl font-serif text-primary mb-8 flex items-center gap-3">
@@ -281,9 +278,6 @@ export default function MembershipSection() {
             </div>
           </div>
         </div>
-=======
-        
->>>>>>> main
 
         <div className="mt-16 text-center">
           <Button 
