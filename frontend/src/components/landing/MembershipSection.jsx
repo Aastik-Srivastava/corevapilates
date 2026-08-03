@@ -107,12 +107,8 @@ const CategoryAccordion = ({ section }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelectPlan = (plan, type = "") => {
-    let priceText = plan.price;
-    if (section.hasGroupAndPrivate) {
-      priceText = type === "Private" ? plan.privatePrice : plan.groupPrice;
-    }
     const planName = type ? `${plan.name} (${type})` : plan.name;
-    const text = encodeURIComponent(`Hi! I am interested in the ${planName} from ${section.category} at COREVA for ${priceText}. Could you share more details?`);
+    const text = encodeURIComponent(`Hi! I am interested in the ${planName} from ${section.category} at COREVA. Could you share more details?`);
     window.open(`https://wa.me/919129661662?text=${text}`, '_blank');
   };
 
@@ -167,16 +163,7 @@ const CategoryAccordion = ({ section }) => {
                   <div className="mt-auto pt-4">
                     {section.hasGroupAndPrivate ? (
                       <div className="flex flex-col gap-4">
-                        <div className="flex justify-between items-center bg-black/5 rounded-xl p-3">
-                          <div className="text-center w-1/2 border-r border-current/10">
-                            <p className="text-[10px] uppercase tracking-widest opacity-60 mb-1">Group</p>
-                            <div className="text-xl font-medium">{plan.groupPrice}</div>
-                          </div>
-                          <div className="text-center w-1/2">
-                            <p className="text-[10px] uppercase tracking-widest opacity-60 mb-1">Private</p>
-                            <div className="text-xl font-medium">{plan.privatePrice}</div>
-                          </div>
-                        </div>
+                        {/* Prices temporarily hidden */}
                         <div className="flex gap-2">
                           <Button 
                             onClick={() => handleSelectPlan(plan, 'Group')}
@@ -203,9 +190,7 @@ const CategoryAccordion = ({ section }) => {
                       </div>
                     ) : (
                       <>
-                        <div className="text-3xl font-light mb-6">
-                          {plan.price}
-                        </div>
+                        {/* Prices temporarily hidden */}
                         <Button 
                           onClick={() => handleSelectPlan(plan)}
                           disabled={plan.price === "Coming Soon"}
@@ -262,7 +247,43 @@ export default function MembershipSection() {
           ))}
         </div>
         
+<<<<<<< HEAD
+        {/* Policies Section */}
+        <div className="bg-white/60 backdrop-blur-xl border border-primary/10 rounded-3xl p-8 md:p-12 shadow-sm">
+          <h3 className="text-2xl font-serif text-primary mb-8 flex items-center gap-3">
+            <Info className="w-6 h-6 text-accent" />
+            Studio Policies
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Validity Extension</p>
+              <p className="font-medium text-primary">Charges Applicable</p>
+            </div>
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Unused Sessions</p>
+              <p className="font-medium text-primary">Carry Forward on Renewal</p>
+            </div>
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Rescheduling</p>
+              <p className="font-medium text-primary">12-Hour Notice Required</p>
+            </div>
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">No Show</p>
+              <p className="font-medium text-primary">Session Deducted</p>
+            </div>
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Membership</p>
+              <p className="font-medium text-primary">Non-Refundable & Non-Transferable</p>
+            </div>
+            <div className="bg-background p-4 rounded-2xl">
+              <p className="text-xs uppercase tracking-widest opacity-60 mb-1">Advance Booking</p>
+              <p className="font-medium text-primary">Required</p>
+            </div>
+          </div>
+        </div>
+=======
         
+>>>>>>> main
 
         <div className="mt-16 text-center">
           <Button 
