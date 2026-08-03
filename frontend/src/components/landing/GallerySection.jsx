@@ -1,12 +1,11 @@
 import React from 'react';
 
 export default function GallerySection() {
-  // Using high-quality stock images as aesthetic placeholders until the actual studio is photographed
-  const placeholderImages = [
-    "https://images.pexels.com/photos/36833354/pexels-photo-36833354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.pexels.com/photos/37573625/pexels-photo-37573625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "https://images.unsplash.com/photo-1747238415033-b74eec07eb59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxyZWZvcm1lciUyMHBpbGF0ZXN8ZW58MHx8fHwxNzc5OTkyMDc3fDA&ixlib=rb-4.1.0&q=85",
-    "https://images.pexels.com/photos/36833355/pexels-photo-36833355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    const placeholderImages = [
+    "/images/gallery-1.jpg",
+    "/images/gallery-2.jpg",
+    "/images/gallery-3.jpg",
+    "/images/gallery-4.jpg"
   ];
 
   return (
@@ -15,8 +14,7 @@ export default function GallerySection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-primary mb-4">The Space</h2>
           <p className="text-primary/60 font-light max-w-xl mx-auto">
-            A sanctuary designed for your mind and body. <br className="hidden sm:block"/>
-            <span className="text-xs uppercase tracking-widest opacity-60 mt-2 block">(Studio Gallery Placeholders)</span>
+            A sanctuary designed for your mind and body.
           </p>
         </div>
         
@@ -28,14 +26,10 @@ export default function GallerySection() {
                 idx === 0 || idx === 3 ? 'md:col-span-1 aspect-square lg:aspect-[3/4]' : 'md:col-span-1 aspect-[4/3] lg:aspect-[3/4]'
               }`}
             >
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-500 z-10 flex items-center justify-center">
-                <span className="bg-white/90 text-primary px-3 py-1 rounded text-[10px] uppercase tracking-wider font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Placeholder
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-500 z-10" />
               <img 
                 src={src} 
-                alt="Studio space placeholder" 
+                alt="Studio space" 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </div>

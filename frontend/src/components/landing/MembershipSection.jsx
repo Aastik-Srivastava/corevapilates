@@ -247,6 +247,7 @@ export default function MembershipSection() {
           ))}
         </div>
         
+<<<<<<< HEAD
         {/* Policies Section */}
         <div className="bg-white/60 backdrop-blur-xl border border-primary/10 rounded-3xl p-8 md:p-12 shadow-sm">
           <h3 className="text-2xl font-serif text-primary mb-8 flex items-center gap-3">
@@ -280,6 +281,9 @@ export default function MembershipSection() {
             </div>
           </div>
         </div>
+=======
+        
+>>>>>>> main
 
         <div className="mt-16 text-center">
           <Button 

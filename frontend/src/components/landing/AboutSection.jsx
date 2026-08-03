@@ -7,11 +7,7 @@ export default function AboutSection() {
         {/* Image */}
         <div className="w-full lg:w-1/2 relative">
           <div className="absolute -inset-4 bg-secondary/30 rounded-3xl -z-10 transform -rotate-2" />
-          <img 
-            src="https://images.unsplash.com/photo-1717500252297-b09508db7ceb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw0fHxwaWxhdGVzJTIwc3R1ZGlvfGVufDB8fHx8MTc3OTk5MjA0MXww&ixlib=rb-4.1.0&q=85" 
-            alt="Mindful movement at Coreva" 
-            className="w-full aspect-[4/5] object-cover rounded-3xl shadow-lg"
-          />
+          <img src="/images/about.jpg" alt="COREVA Studio Space" />
         </div>
         
         {/* Text Content */}
